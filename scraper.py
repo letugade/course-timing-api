@@ -9,6 +9,8 @@ import html_to_json
 
 
 def send_post_request(course: str) -> dict:
+    """ Send the POST request to the server
+    """
     url = "https://api.easi.utoronto.ca/ttb/getPageableCourses"
     payload = {"courseCodeAndTitleProps": {
         "courseCode": "",
